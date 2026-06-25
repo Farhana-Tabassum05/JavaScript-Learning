@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page1">
+        <div class="flex flex-col gap-10 items-center">
+            <input class=" input px-5 py-5 rounded outline-none bg-[#111] text-[#888]" type="text" placeholder="Search...">
+            <div class="new">
+                <button class="newUser">+</button>
+            </div>
+            <div class="cards flex gap-10">  
+            </div>
+        </div>
+        
+    </div>
+    <div class="options">
+        <button id="delete">Delete</button>
+        <button id="edit">Edit</button>
+    </div>
+    <div id="page2">
+        <form>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="pic" placeholder="Pic URL">
+            <input type="text" id="bio" placeholder="Bio">
+            <div class="buttons adding">
+                <button class="addUser">Add User</button>
+                <button class="cancel">Cancel</button>
+            </div>
+            <div class="buttons editing">
+                <button class="editUser">Edit User</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
